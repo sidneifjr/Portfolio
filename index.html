@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sidnei Farias Júnior - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.min.css">
+</head>
+
+<body>
+
+  <!-- Wrapper para todo o conteúdo -->
+  <div class="container" id="home">
+    <!-- Wrapper do sidebar -->
+    <aside class="sidebar-container">
+      <div class="sidebar">
+        <div class="image-holder">
+          <img src="img/me.jpg">
+        </div>
+
+        <h1>Sidnei Farias</h1>
+        <p>Front-End Developer</p>
+
+        <nav>
+          <li><a data-scroll href="#portfolio">Portfólio</a></li>
+          <li><a data-scroll href="#skills">Skills</a></li>
+          <li><a data-scroll href="#contato">Contato</a></li>
+        </nav>
+
+        <!-- Bottom icons -->
+        <ul class="sidebar-icons">
+          <li>
+            <a href="mailto:sidneijr.77@gmail.com" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+          </li>
+
+          <li>
+            <a href="https://github.com/sidneifjr" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+
+          <li>
+            <a href="https://codepen.io/sidneifjr/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content" id="sobre">
+      <section class="intro">
+        <h1 data-anime="fadeIn">Sobre</h1>
+        <p data-anime="left">Olá, seja bem vindo! Eu sou estudante (por conta própria) de Front-End e UX Design, 21 anos. Apaixonado por tecnologia, decidi seguir a carreira de Web após o fim de meu ensino técnico.</p>
+        <p data-anime="left">Além de Front-End, também sou apaixonado por UX Design, uma área que me fascina e inspira a dizer muito falando pouco, e busco estudar seus conceitos concomitantemente com programação. </p>
+        <p data-anime="left">Meu foco é criar interfaces que inspiram o melhor em todos, pois UX Design, diferente do que muitos pensam, não é só beleza. Quando feito da maneira certa, é possível mudar a vida das pessoas.</p>
+      </section>
+
+      <h1 id="portfolio" data-anime="left-2">Portfolio</h1>
+
+      <section class="grid">
+        <div class="cs-style grid-item" data-anime="box">
+          <img src="img/VueJS-Punch-Bag.jpg">
+          <figcaption>
+            <h2>Vue.JS Punch Bag</h2>
+            <p>Um simples jogo, desenvolvido para prática de novas tecnologias. SASS, Javascript e Vue.js. </p>
+            <a href="https://github.com/sidneifjr/Vue.JS-Punching-Bag" target="_blank">Ver mais</a>
+          </figcaption>
+        </div>
+
+        <div class="cs-style grid-item" data-anime="box">
+          <img src="img/metroid.jpg">
+          <figcaption>
+            <h2>Metroid - Tribute in CSS</h2>
+            <p>Um tributo à uma heroína que marcou minha infância gamer, Samus Aran. SASS e jQuery.</p>
+            <a href="https://codepen.io/sidneifjr/pen/OmMBEw" target="_blank">Ver mais</a>
+          </figcaption>
+        </div>
+
+        <div class="cs-style grid-item" data-anime="box">
+          <img src="img/search-page-concept.jpg">
+          <figcaption>
+            <h2>Custom Searchbox</h2>
+            <p>Um conceito de barra de pesquisa baseado em feedback dinâmico do usuário. UX, SASS e Javascript. </p>
+            <a href="https://codepen.io/sidneifjr/pen/jYyLog" target="_blank">Ver mais</a>
+          </figcaption>
+        </div>
+
+        <div class="cs-style grid-item" data-anime="box">
+          <img src="img/iphone-calculator.jpg">
+          <figcaption>
+            <h2>Iphone X Calculator</h2>
+            <p>Calculadora simples, inspirada na estética do novo Iphone X. Javascript e SASS.</p>
+            <a href="https://codepen.io/sidneifjr/pen/gowgjo" target="_blank">Ver mais</a>
+          </figcaption>
+        </div>
+
+        <div class="cs-style grid-item" data-anime="box">
+          <img src="img/brothers.jpg">
+          <figcaption>
+            <h2>Brothers 2.0</h2>
+            <p>Um single-page website destinado ao hip hop, ambos clássicos e atuais. CSS, Bootstrap e Javascript/jQuery.</p>
+            <a href="https://github.com/sidneifjr/Brothers" target="_blank">Ver mais</a>
+          </figcaption>
+        </div>
+
+        <div class="cs-style grid-item" data-anime="box">
+          <img src="img/Reaction-Challenge.jpg">
+          <figcaption>
+            <h2>Reaction Challenge</h2>
+            <p>Um jogo que testa seu tempo de reação. Não há muito o que dizer, além disso. Feito com Javascript.</p>
+            <a href="https://github.com/sidneifjr/Reaction-Challenge" target="_blank">Ver mais</a>
+          </figcaption>
+        </div>
+
+        <!-- Exibir mais itens...
+         <div class="more" style="width: 100%;" data-anime="box">
+          <button>+</button>
+        </div>
+        -->
+      </section>
+
+      <section class="skills" id="skills" data-anime="left">
+        <h1> Skills </h1>
+        <div class="skill-list">
+          <img src="img/skills/html5.svg" alt="HTML5">
+          <img src="img/skills/css.svg" alt="CSS3">
+          <img src="img/skills/javascript.svg" alt="Javascript">
+          <img src="img/skills/sass.svg" alt="SASS">
+          <img src="img/skills/SVG.svg" alt="SVG">
+          <img src="img/skills/bootstrap.svg" alt="Bootstrap">
+          <img src="img/skills/jquery.svg" alt="jQuery">
+          <img src="img/skills/vue.svg" alt="Vue.js">
+          <img src="img/skills/illustrator.svg" alt="Adobe Illustrator">
+          <img src="img/skills/github.svg" alt="Github">
+        </div>
+      </section>
+
+      <div class="contato" id="contato" data-anime="left">
+        <h1>Contato</h1>
+        <p>Atualmente, atuo como Front-End Autônomo na empresa <a href="https://desesperando.com.br/">Desesperando</a>. Porém, estou à disposição para vagas de emprego e trabalhos independentes envolvendo Front-End e/ou UX Design de nível Júnior.</p>
+        <p>Deseja ver meu currículo? <a href="Sidnei Farias Júnior - Currículo Web.pdf" target="_blank">Aproveite!</a> Você pode falar comigo pelo formulário abaixo... </p>
+
+        <form class="contact-form" method="POST" action="https://simple-form.com/sidneijr.77@gmail.com">
+          <input type="text" name="name" placeholder="Como se chama?" required>
+          <input type="text" name="email" placeholder="Email, para retornar contato." required>
+          <textarea type="text" name="description" placeholder="O que deseja falar?" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="btnTop">
+        <a data-scroll href="#home"><button><i class="fa fa-arrow-up" aria-hidden="true"></i></button></a>
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="js/main.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script>
+    // Inicializando plugin
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      // Velocidade e tipo de transição
+      speed: 600,
+      easing: 'easeInOutQuad'
+    });
+  </script>
+
+</body>
+
+</html>

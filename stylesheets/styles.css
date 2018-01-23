@@ -1,0 +1,538 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto|Zilla+Slab");
+/* line 8, ../sass/styles.scss */
+.container, .skill-list, .contato .contact-form, .btnTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 14, ../sass/styles.scss */
+*, *:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 19, ../sass/styles.scss */
+button, .sidebar .sidebar-icons .fa-google:hover,
+.sidebar .sidebar-icons .fa-github:hover,
+.sidebar .sidebar-icons .fa-codepen:hover {
+  transition: ease 0.3s;
+}
+
+/* line 23, ../sass/styles.scss */
+body, a, button, .grid-item figcaption {
+  color: #fff;
+}
+
+/* line 27, ../sass/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 39, ../sass/styles.scss */
+::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #ddd;
+}
+
+/* line 44, ../sass/styles.scss */
+:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #ddd;
+}
+
+/* line 49, ../sass/styles.scss */
+::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #ddd;
+}
+
+/* line 54, ../sass/styles.scss */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  background: #eee;
+}
+
+/* line 62, ../sass/styles.scss */
+h1,
+h2,
+h3 {
+  font-family: "Zilla Slab", sans-serif;
+}
+
+/* line 68, ../sass/styles.scss */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+/* line 73, ../sass/styles.scss */
+p {
+  font-size: 1rem;
+}
+
+/* line 77, ../sass/styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* Pegar todas as propriedades em comum dos bot├Áes. */
+/* line 83, ../sass/styles.scss */
+button {
+  width: 90%;
+  background: #52559a;
+  border: solid 2px #52559a;
+  padding: 12px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  display: block;
+}
+/* line 95, ../sass/styles.scss */
+button:hover {
+  background: transparent;
+  color: #52559a;
+}
+
+/* line 105, ../sass/styles.scss */
+.sidebar {
+  padding: 11vh 5vw;
+  text-align: center;
+  background: -webkit-linear-gradient(135deg, #654073, #52559a);
+  background: -o-linear-gradient(135deg, #654073, #52559a);
+  background: linear-gradient(-45deg, #654073, #52559a);
+  background-size: 100% 100%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+}
+/* line 120, ../sass/styles.scss */
+.sidebar p {
+  font-size: 1.5rem;
+  margin-bottom: 7px;
+}
+/* line 125, ../sass/styles.scss */
+.sidebar nav {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  list-style-type: none;
+}
+/* line 130, ../sass/styles.scss */
+.sidebar nav li {
+  padding: 0 5px;
+  display: inline-block;
+}
+/* line 134, ../sass/styles.scss */
+.sidebar nav li:hover {
+  font-weight: 700;
+}
+/* line 140, ../sass/styles.scss */
+.sidebar .image-holder {
+  width: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 145, ../sass/styles.scss */
+.sidebar .image-holder img {
+  width: 100%;
+  border-radius: 50%;
+}
+/* line 151, ../sass/styles.scss */
+.sidebar .sidebar-icons {
+  position: relative;
+  top: 18%;
+}
+/* line 155, ../sass/styles.scss */
+.sidebar .sidebar-icons li {
+  display: inline-block;
+  padding: 8px;
+}
+/* line 160, ../sass/styles.scss */
+.sidebar .sidebar-icons .fa-google,
+.sidebar .sidebar-icons .fa-github,
+.sidebar .sidebar-icons .fa-codepen {
+  font-size: 1.8rem;
+  padding: 12px;
+  border-radius: 50%;
+  background: #303030;
+  border: solid 2px #303030;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+/* line 171, ../sass/styles.scss */
+.sidebar .sidebar-icons .fa-google:hover,
+.sidebar .sidebar-icons .fa-github:hover,
+.sidebar .sidebar-icons .fa-codepen:hover {
+  color: #303030;
+  background: transparent;
+}
+
+/* line 180, ../sass/styles.scss */
+.content {
+  padding: 5vw;
+}
+/* line 183, ../sass/styles.scss */
+.content .intro,
+.content .intro h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #303030;
+}
+/* line 190, ../sass/styles.scss */
+.content h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #303030;
+}
+/* line 196, ../sass/styles.scss */
+.content p {
+  margin-bottom: 1rem;
+}
+
+/* line 201, ../sass/styles.scss */
+.grid-item {
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+}
+/* line 207, ../sass/styles.scss */
+.grid-item img {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+/* line 213, ../sass/styles.scss */
+.grid-item figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #654073;
+  text-align: center;
+}
+/* line 222, ../sass/styles.scss */
+.grid-item h2 {
+  margin-bottom: 10px;
+}
+
+/* line 228, ../sass/styles.scss */
+.cs-style figcaption {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  padding: 3vw;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+/* line 240, ../sass/styles.scss */
+.cs-style:hover figcaption {
+  opacity: 1;
+}
+
+/* line 245, ../sass/styles.scss */
+.skill-list {
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 0;
+}
+/* line 254, ../sass/styles.scss */
+.skill-list img {
+  width: 7%;
+  margin-right: 1.5vw;
+}
+/* line 258, ../sass/styles.scss */
+.skill-list img:last-child {
+  margin-right: 0;
+}
+
+/* line 264, ../sass/styles.scss */
+.contato {
+  color: #303030;
+}
+/* line 267, ../sass/styles.scss */
+.contato a {
+  color: #52559a;
+  font-weight: bold;
+}
+/* line 271, ../sass/styles.scss */
+.contato a:hover {
+  text-decoration: underline;
+}
+/* line 276, ../sass/styles.scss */
+.contato .contact-form {
+  margin-top: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 284, ../sass/styles.scss */
+.contato .contact-form input,
+.contato .contact-form textarea {
+  width: 90%;
+  margin-bottom: 10px;
+  background: #52559a;
+  border: solid 2px #52559a;
+  color: #fff;
+}
+/* line 293, ../sass/styles.scss */
+.contato .contact-form input {
+  padding: 7px;
+  border-radius: 5px;
+  outline: none;
+  transition: background ease-out 0.3s;
+}
+/* line 299, ../sass/styles.scss */
+.contato .contact-form input:focus {
+  color: #52559a;
+  background: transparent;
+}
+/* line 303, ../sass/styles.scss */
+.contato .contact-form input:focus:focus::placeholder {
+  color: #52559a;
+  opacity: 0.8;
+}
+/* line 310, ../sass/styles.scss */
+.contato .contact-form textarea {
+  height: 15vh;
+  resize: none;
+  transition: background ease-out 0.3s;
+  text-indent: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+/* line 318, ../sass/styles.scss */
+.contato .contact-form textarea:focus {
+  color: #fff;
+  background: transparent;
+}
+/* line 322, ../sass/styles.scss */
+.contato .contact-form textarea:focus:focus::placeholder {
+  color: #52559a;
+  opacity: 0.8;
+}
+
+/* line 331, ../sass/styles.scss */
+.btnTop {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+/* line 339, ../sass/styles.scss */
+.btnTop button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  bottom: 2vh;
+  right: 0.7vw;
+}
+/* line 349, ../sass/styles.scss */
+.btnTop button:hover {
+  color: #52559a;
+  background: transparent;
+}
+/* line 354, ../sass/styles.scss */
+.btnTop button .fa-arrow-up {
+  font-size: 1.4rem;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, 4px, 0);
+  }
+  50% {
+    transform: translate3d(0, -4px, 0);
+  }
+  75% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
+/* line 381, ../sass/styles.scss */
+[data-anime] {
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+/* line 388, ../sass/styles.scss */
+[data-anime="fadeIn"] {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+/* line 395, ../sass/styles.scss */
+[data-anime="left"] {
+  -webkit-transform: translate3d(-60px, 0, 0);
+  transform: translate3d(-60px, 0, 0);
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 403, ../sass/styles.scss */
+[data-anime="left-2"] {
+  -webkit-transform: translate3d(-60px, 0, 0);
+  transform: translate3d(-60px, 0, 0);
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+/* line 412, ../sass/styles.scss */
+[data-anime="box"] {
+  -webkit-transform: translate3d(-60px, 0, 0);
+  transform: translate3d(-60px, 0, 0);
+  /*-webkit-transition-delay: 1.25s;
+  -o-transition-delay: 1.25s;
+  transition-delay: 1.25s;*/
+}
+
+/* line 421, ../sass/styles.scss */
+[data-anime].animate {
+  opacity: 1;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/* Tablets e smarts */
+@media only screen and (max-width: 900px) {
+  /* line 429, ../sass/styles.scss */
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  /* line 436, ../sass/styles.scss */
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+  }
+  /* line 453, ../sass/styles.scss */
+  .sidebar .sidebar-icons {
+    margin-top: 15px;
+  }
+
+  /* line 464, ../sass/styles.scss */
+  .content .grid .grid-item figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 901px) {
+  /* line 481, ../sass/styles.scss */
+  .sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 30vw;
+  }
+
+  /* line 487, ../sass/styles.scss */
+  .sidebar-container {
+    -webkit-box-flex: 30vw;
+    -ms-flex: 30vw;
+    flex: 30vw;
+  }
+
+  /* line 493, ../sass/styles.scss */
+  .content {
+    -webkit-box-flex: 65vw;
+    -ms-flex: 65vw;
+    flex: 65vw;
+  }
+
+  /* line 499, ../sass/styles.scss */
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  /* line 507, ../sass/styles.scss */
+  .grid-item {
+    width: 45%;
+    margin-right: 1rem;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

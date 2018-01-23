@@ -1,0 +1,554 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Zilla+Slab");
+
+$white: #fff;
+$black: #303030;
+$purple: #654073;
+$sea-blue: #52559a;
+
+%flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%borderBox {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+%transition {
+  transition: ease 0.3s;
+}
+
+%whiteColor {
+  color: $white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  @extend %borderBox;
+}
+
+*:before,
+*:after {
+  @extend %borderBox;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #ddd;
+}
+
+:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #ddd;
+}
+
+::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #ddd;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  background: #eee;
+  @extend %whiteColor;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Zilla Slab", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  @extend %whiteColor;
+}
+
+/* Pegar todas as propriedades em comum dos botões. */
+button {
+  width: 90%;
+  @extend %whiteColor;
+  background: $sea-blue;
+  border: solid 2px $sea-blue;
+  padding: 12px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  @extend %transition;
+  display: block;
+
+  &:hover {
+    background: transparent;
+    color: $sea-blue;
+  }
+}
+
+.container {
+  @extend %flex;
+}
+
+.sidebar {
+  // width: 100%;
+  padding: 11vh 5vw;
+  text-align: center;
+  background: -webkit-linear-gradient(135deg, $purple, $sea-blue);
+  background: -o-linear-gradient(135deg, $purple, $sea-blue);
+  background: linear-gradient(
+    -45deg,
+    $purple,
+    $sea-blue
+  ); // ou troca a posição das cores.
+  background-size: 100% 100%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+  }
+
+  nav {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    list-style-type: none;
+
+    li {
+      padding: 0 5px;
+      display: inline-block;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .image-holder {
+    width: 160px;
+    margin: 0 auto;
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .sidebar-icons {
+    position: relative;
+    top: 18%;
+
+    li {
+      display: inline-block;
+      padding: 8px;
+    }
+
+    .fa-google,
+    .fa-github,
+    .fa-codepen {
+      font-size: 1.8rem;
+      padding: 12px;
+      border-radius: 50%;
+      background: $black;
+      border: solid 2px $black;
+      margin-right: 2px;
+      vertical-align: middle;
+
+      &:hover {
+        @extend %transition;
+        color: $black;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 5vw;
+
+  .intro,
+  .intro h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: $black;
+  }
+
+  h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: $black;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.grid-item {
+  //padding: 1vw;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+
+  img {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $purple; // sea-blue?
+    text-align: center;
+    @extend %whiteColor;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.cs-style {
+  figcaption {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    padding: 3vw;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+
+  &:hover figcaption {
+    opacity: 1;
+  }
+}
+
+.skill-list {
+  width: 100%;
+
+  @extend %flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 0;
+
+  img {
+    width: 7%;
+    margin-right: 1.5vw;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.contato {
+  color: $black;
+
+  a {
+    color: $sea-blue;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .contact-form {
+    margin-top: 1.5rem;
+    @extend %flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    input,
+    textarea {
+      width: 90%;
+      margin-bottom: 10px;
+      background: $sea-blue;
+      border: solid 2px $sea-blue;
+      color: $white;
+    }
+
+    input {
+      padding: 7px;
+      border-radius: 5px;
+      outline: none;
+      transition: background ease-out 0.3s;
+
+      &:focus {
+        color: $sea-blue;
+        background: transparent;
+
+        &:focus::placeholder {
+          color: $sea-blue;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    textarea {
+      height: 15vh;
+      resize: none;
+      transition: background ease-out 0.3s;
+      text-indent: 5px;
+      border-radius: 5px;
+      outline: none;
+
+      &:focus {
+        color: #fff;
+        background: transparent;
+
+        &:focus::placeholder {
+          color: $sea-blue;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.btnTop {
+  @extend %flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s;
+
+  button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    bottom: 2vh;
+    right: 0.7vw;
+
+    &:hover {
+      color: $sea-blue;
+      background: transparent;
+    }
+
+    .fa-arrow-up {
+      font-size: 1.4rem;
+      //animation-name: upDown;
+      animation-duration: 2.5s;
+      animation-timing-function: ease-in-out;
+      animation-direction: forwards;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, 4px, 0);
+  }
+  50% {
+    transform: translate3d(0, -4px, 0);
+  }
+  75% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
+
+[data-anime] {
+  opacity: 0;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+[data-anime="fadeIn"] {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+[data-anime="left"] {
+  -webkit-transform: translate3d(-60px, 0, 0);
+  transform: translate3d(-60px, 0, 0);
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+[data-anime="left-2"] {
+  -webkit-transform: translate3d(-60px, 0, 0);
+  transform: translate3d(-60px, 0, 0);
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+// Com transition-delay: 1s, os boxes demoram muito a aparecer ao scroll.
+[data-anime="box"] {
+  -webkit-transform: translate3d(-60px, 0, 0);
+  transform: translate3d(-60px, 0, 0);
+  /*-webkit-transition-delay: 1.25s;
+  -o-transition-delay: 1.25s;
+  transition-delay: 1.25s;*/
+}
+
+// Quando um elemento com 'data-anime' tiver a classe ".animate".
+[data-anime].animate {
+  opacity: 1;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/* Tablets e smarts */
+@media only screen and (max-width: 900px) {
+	.container {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+	}
+
+	.sidebar {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+	  -webkit-box-pack: center;
+	  -ms-flex-pack: center;
+	  justify-content: center;
+	  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  text-align: center;
+	  min-height: 50vh;
+
+	  .sidebar-icons {
+	  	margin-top: 15px;
+	  }
+	}
+
+	.content {
+
+		.grid {
+
+			.grid-item {
+
+				figcaption {
+					display: flex;
+	    		align-items:center;
+	    		justify-content:center;
+	    		flex-direction: column;
+				}
+
+			}
+
+		}
+
+	}
+	
+}
+
+/* Desktop */
+@media only screen and (min-width: 901px) {
+  .sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 30vw;
+  }
+
+  .sidebar-container {
+    -webkit-box-flex: 30vw;
+    -ms-flex: 30vw;
+    flex: 30vw;
+  }
+
+  .content {
+    -webkit-box-flex: 65vw;
+    -ms-flex: 65vw;
+    flex: 65vw;
+  }
+
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .grid-item {
+    width: 45%;
+    margin-right: 1rem;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
