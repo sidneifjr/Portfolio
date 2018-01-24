@@ -90,7 +90,6 @@ li {
   display: inline-block;
 }
 
-/* Pegar todas as propriedades em comum dos botões. */
 button {
   width: 90%;
   @extend %whiteColor;
@@ -229,7 +228,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    background: $purple; // sea-blue?
+    background: $purple;
     text-align: center;
     @extend %whiteColor;
   }
