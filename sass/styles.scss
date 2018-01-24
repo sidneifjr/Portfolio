@@ -17,11 +17,17 @@ $sea-blue: #52559a;
 }
 
 %transition {
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
   transition: ease 0.3s;
 }
 
 %whiteColor {
   color: $white;
+}
+
+%width {
+  width: 100%;
 }
 
 * {
@@ -70,13 +76,18 @@ h1 {
   margin-bottom: 0;
 }
 
-p {
-  font-size: 1rem;
+span {
+  font-size: 1.5rem;
+  margin-bottom: 7px;
 }
 
 a {
   text-decoration: none;
   @extend %whiteColor;
+}
+
+li {
+  display: inline-block;
 }
 
 /* Pegar todas as propriedades em comum dos botões. */
@@ -103,11 +114,20 @@ button {
 }
 
 .sidebar {
-  // width: 100%;
   padding: 11vh 5vw;
   text-align: center;
   background: -webkit-linear-gradient(135deg, $purple, $sea-blue);
   background: -o-linear-gradient(135deg, $purple, $sea-blue);
+  background: -webkit-linear-gradient(
+    135deg,
+    $purple,
+    $sea-blue
+  );
+  background: -o-linear-gradient(
+    135deg,
+    $purple,
+    $sea-blue
+  );
   background: linear-gradient(
     -45deg,
     $purple,
@@ -117,19 +137,13 @@ button {
   -webkit-animation: gradient 15s ease infinite;
   animation: gradient 15s ease infinite;
 
-  p {
-    font-size: 1.5rem;
-    margin-bottom: 7px;
-  }
-
   nav {
     font-size: 1.25rem;
     margin-top: 10px;
     list-style-type: none;
 
     li {
-      padding: 0 5px;
-      display: inline-block;
+      padding: 0 8px;
 
       &:hover {
         font-weight: 700;
@@ -138,22 +152,23 @@ button {
   }
 
   .image-holder {
-    width: 160px;
-    margin: 0 auto;
+    width: 180px;
     position: relative;
+    margin: 0 auto;
+    top: 1rem;
 
     img {
-      width: 100%;
+      @extend %width;
       border-radius: 50%;
+      border: solid 5px $black;
     }
   }
 
   .sidebar-icons {
     position: relative;
-    top: 18%;
+    top: 25%;
 
     li {
-      display: inline-block;
       padding: 8px;
     }
 
@@ -205,9 +220,9 @@ button {
   position: relative;
 
   img {
-    width: 100%;
-    display: block;
+    @extend %width;
     position: relative;
+    display: block;
   }
 
   figcaption {
@@ -225,11 +240,12 @@ button {
 }
 
 .cs-style {
+
   figcaption {
     height: 100%;
-    width: 100%;
+    @extend %width;
     opacity: 0;
-    padding: 3vw;
+    padding: 4.5vw 3vw;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: opacity 0.3s;
@@ -243,8 +259,7 @@ button {
 }
 
 .skill-list {
-  width: 100%;
-
+  @extend %width;
   @extend %flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -294,11 +309,28 @@ button {
       padding: 7px;
       border-radius: 5px;
       outline: none;
+      -webkit-transition: background ease-out 0.3s;
+      -o-transition: background ease-out 0.3s;
       transition: background ease-out 0.3s;
 
       &:focus {
         color: $sea-blue;
         background: transparent;
+
+        &:focus::-webkit-input-placeholder {
+          color: $sea-blue;
+          opacity: 0.8;
+        }
+
+        &:focus:-ms-input-placeholder {
+          color: $sea-blue;
+          opacity: 0.8;
+        }
+
+        &:focus::-ms-input-placeholder {
+          color: $sea-blue;
+          opacity: 0.8;
+        }
 
         &:focus::placeholder {
           color: $sea-blue;
@@ -310,14 +342,31 @@ button {
     textarea {
       height: 15vh;
       resize: none;
+      -webkit-transition: background ease-out 0.3s;
+      -o-transition: background ease-out 0.3s;
       transition: background ease-out 0.3s;
       text-indent: 5px;
       border-radius: 5px;
       outline: none;
 
       &:focus {
-        color: #fff;
+        color: $sea-blue;
         background: transparent;
+
+        &:focus::-webkit-input-placeholder {
+          color: $sea-blue;
+          opacity: 0.8;
+        }
+
+        &:focus:-ms-input-placeholder {
+          color: $sea-blue;
+          opacity: 0.8;
+        }
+
+        &:focus::-ms-input-placeholder {
+          color: $sea-blue;
+          opacity: 0.8;
+        }
 
         &:focus::placeholder {
           color: $sea-blue;
@@ -334,6 +383,8 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   opacity: 0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
   transition: opacity 1s;
 
   button {
@@ -354,27 +405,55 @@ button {
     .fa-arrow-up {
       font-size: 1.4rem;
       //animation-name: upDown;
-      animation-duration: 2.5s;
-      animation-timing-function: ease-in-out;
-      animation-direction: forwards;
-      animation-iteration-count: infinite;
+      -webkit-animation-duration: 2.5s;
+              animation-duration: 2.5s;
+      -webkit-animation-timing-function: ease-in-out;
+              animation-timing-function: ease-in-out;
+      -webkit-animation-direction: forwards;
+              animation-direction: forwards;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
     }
+  }
+}
+
+@-webkit-keyframes upDown {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(0, 4px, 0);
+            transform: translate3d(0, 4px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -4px, 0);
+            transform: translate3d(0, -4px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(0, 4px, 0);
+            transform: translate3d(0, 4px, 0);
   }
 }
 
 @keyframes upDown {
   0%,
   100% {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   25% {
-    transform: translate3d(0, 4px, 0);
+    -webkit-transform: translate3d(0, 4px, 0);
+            transform: translate3d(0, 4px, 0);
   }
   50% {
-    transform: translate3d(0, -4px, 0);
+    -webkit-transform: translate3d(0, -4px, 0);
+            transform: translate3d(0, -4px, 0);
   }
   75% {
-    transform: translate3d(0, 4px, 0);
+    -webkit-transform: translate3d(0, 4px, 0);
+            transform: translate3d(0, 4px, 0);
   }
 }
 
@@ -426,54 +505,63 @@ button {
 
 /* Tablets e smarts */
 @media only screen and (max-width: 900px) {
-	.container {
-	  -webkit-box-orient: vertical;
-	  -webkit-box-direction: normal;
-	  -ms-flex-direction: column;
-	  flex-direction: column;
-	}
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 
-	.sidebar {
-	  display: -webkit-box;
-	  display: -ms-flexbox;
-	  display: flex;
-	  -webkit-box-orient: vertical;
-	  -webkit-box-direction: normal;
-	  -ms-flex-direction: column;
-	  flex-direction: column;
-	  -webkit-box-pack: center;
-	  -ms-flex-pack: center;
-	  justify-content: center;
-	  -webkit-box-align: center;
-	  -ms-flex-align: center;
-	  align-items: center;
-	  text-align: center;
-	  min-height: 50vh;
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
 
-	  .sidebar-icons {
-	  	margin-top: 15px;
-	  }
-	}
+    .sidebar-icons {
+      margin-top: 15px;
+    }
+  }
 
-	.content {
+  .content {
 
-		.grid {
+    .grid {
 
-			.grid-item {
+      .grid-item {
 
-				figcaption {
-					display: flex;
-	    		align-items:center;
-	    		justify-content:center;
-	    		flex-direction: column;
-				}
+        figcaption {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align:center;
+              -ms-flex-align:center;
+                  align-items:center;
+          -webkit-box-pack:center;
+              -ms-flex-pack:center;
+                  justify-content:center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+        }
 
-			}
+      }
 
-		}
+    }
 
-	}
-	
+  }
+  
 }
 
 /* Desktop */
