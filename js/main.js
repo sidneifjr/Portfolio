@@ -1,5 +1,7 @@
 (function() {
+
   "use strict";
+
   // Debounce do Lodash
   const debounce = function(func, wait, immediate) {
     let timeout;
@@ -16,6 +18,18 @@
     };
   };
 
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+      document.querySelector(".btnTop").style.opacity = "1";
+    } else {
+      document.querySelector(".btnTop").style.opacity = "0";
+    }
+  }
+
   const target = document.querySelectorAll("[data-anime]"),
     animationClass = "animate";
 
@@ -25,8 +39,6 @@
     target.forEach(function(element) {
       if (windowTop > element.offsetTop) {
         element.classList.add(animationClass);
-      } else {
-        element.classList.remove(animationClass);
       }
     });
   }
@@ -43,15 +55,3 @@
     );
   }
 })();
-
-window.onscroll = function() {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-    document.querySelector(".btnTop").style.opacity = "1";
-  } else {
-    document.querySelector(".btnTop").style.opacity = "0";
-  }
-}
