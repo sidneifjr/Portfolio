@@ -29,36 +29,55 @@ body, a, button, .grid-item figcaption {
 }
 
 /* line 29, ../sass/styles.scss */
+<<<<<<< HEAD
 .sidebar .image-holder img, .grid-item img, .cs-style figcaption, .skill-list {
   width: 100%;
 }
 
 /* line 33, ../sass/styles.scss */
+=======
+>>>>>>> origin/gh-pages
 * {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+<<<<<<< HEAD
 /* line 45, ../sass/styles.scss */
+=======
+/* line 41, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 ::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
   color: #ddd;
 }
 
+<<<<<<< HEAD
 /* line 50, ../sass/styles.scss */
+=======
+/* line 46, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 :-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   color: #ddd;
 }
 
+<<<<<<< HEAD
 /* line 55, ../sass/styles.scss */
+=======
+/* line 51, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 ::-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   color: #ddd;
 }
 
+<<<<<<< HEAD
 /* line 60, ../sass/styles.scss */
+=======
+/* line 56, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 body {
   font-size: 1rem;
   line-height: 1.5;
@@ -66,19 +85,28 @@ body {
   background: #eee;
 }
 
+<<<<<<< HEAD
 /* line 68, ../sass/styles.scss */
+=======
+/* line 64, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 h1,
 h2,
 h3 {
   font-family: "Zilla Slab", sans-serif;
 }
 
+<<<<<<< HEAD
 /* line 74, ../sass/styles.scss */
+=======
+/* line 70, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 /* line 79, ../sass/styles.scss */
 span {
   font-size: 1.5rem;
@@ -86,6 +114,14 @@ span {
 }
 
 /* line 84, ../sass/styles.scss */
+=======
+/* line 75, ../sass/styles.scss */
+p {
+  font-size: 1rem;
+}
+
+/* line 79, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 a {
   text-decoration: none;
 }
@@ -96,7 +132,11 @@ li {
 }
 
 /* Pegar todas as propriedades em comum dos bot├Áes. */
+<<<<<<< HEAD
 /* line 94, ../sass/styles.scss */
+=======
+/* line 85, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 button {
   width: 90%;
   background: #52559a;
@@ -107,13 +147,21 @@ button {
   cursor: pointer;
   display: block;
 }
+<<<<<<< HEAD
 /* line 106, ../sass/styles.scss */
+=======
+/* line 97, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 button:hover {
   background: transparent;
   color: #52559a;
 }
 
+<<<<<<< HEAD
 /* line 116, ../sass/styles.scss */
+=======
+/* line 107, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .sidebar {
   padding: 11vh 5vw;
   text-align: center;
@@ -126,16 +174,30 @@ button:hover {
   -webkit-animation: gradient 15s ease infinite;
   animation: gradient 15s ease infinite;
 }
+<<<<<<< HEAD
 /* line 140, ../sass/styles.scss */
+=======
+/* line 132, ../sass/styles.scss */
+.sidebar p {
+  font-size: 1.5rem;
+  margin-bottom: 7px;
+}
+/* line 137, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .sidebar nav {
   font-size: 1.25rem;
   margin-top: 10px;
   list-style-type: none;
 }
+<<<<<<< HEAD
 /* line 145, ../sass/styles.scss */
+=======
+/* line 142, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .sidebar nav li {
   padding: 0 8px;
 }
+<<<<<<< HEAD
 /* line 148, ../sass/styles.scss */
 .sidebar nav li:hover {
   font-weight: 700;
@@ -143,25 +205,50 @@ button:hover {
 /* line 154, ../sass/styles.scss */
 .sidebar .image-holder {
   width: 180px;
+=======
+/* line 146, ../sass/styles.scss */
+.sidebar nav li:hover {
+  font-weight: 700;
+}
+/* line 152, ../sass/styles.scss */
+.sidebar .image-holder {
+  width: 160px;
+>>>>>>> origin/gh-pages
   position: relative;
   margin: 0 auto;
   top: 1rem;
 }
+<<<<<<< HEAD
 /* line 160, ../sass/styles.scss */
+=======
+/* line 158, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .sidebar .image-holder img {
   border-radius: 50%;
   border: solid 5px #303030;
 }
+<<<<<<< HEAD
 /* line 167, ../sass/styles.scss */
+=======
+/* line 164, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .sidebar .sidebar-icons {
   position: relative;
   top: 25%;
 }
+<<<<<<< HEAD
 /* line 171, ../sass/styles.scss */
+=======
+/* line 168, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .sidebar .sidebar-icons li {
   padding: 8px;
 }
+<<<<<<< HEAD
 /* line 175, ../sass/styles.scss */
+=======
+/* line 173, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .sidebar .sidebar-icons .fa-google,
 .sidebar .sidebar-icons .fa-github,
 .sidebar .sidebar-icons .fa-codepen {
@@ -173,7 +260,11 @@ button:hover {
   margin-right: 2px;
   vertical-align: middle;
 }
+<<<<<<< HEAD
 /* line 186, ../sass/styles.scss */
+=======
+/* line 184, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .sidebar .sidebar-icons .fa-google:hover,
 .sidebar .sidebar-icons .fa-github:hover,
 .sidebar .sidebar-icons .fa-codepen:hover {
@@ -181,40 +272,68 @@ button:hover {
   background: transparent;
 }
 
+<<<<<<< HEAD
 /* line 195, ../sass/styles.scss */
 .content {
   padding: 5vw;
 }
 /* line 198, ../sass/styles.scss */
+=======
+/* line 193, ../sass/styles.scss */
+.content {
+  padding: 5vw;
+}
+/* line 196, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .content .intro,
 .content .intro h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   color: #303030;
 }
+<<<<<<< HEAD
 /* line 205, ../sass/styles.scss */
+=======
+/* line 203, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .content h1 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   color: #303030;
 }
+<<<<<<< HEAD
 /* line 211, ../sass/styles.scss */
+=======
+/* line 209, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .content p {
   margin-bottom: 1rem;
 }
 
+<<<<<<< HEAD
 /* line 216, ../sass/styles.scss */
+=======
+/* line 214, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .grid-item {
   margin-bottom: 1rem;
   display: inline-block;
   position: relative;
 }
+<<<<<<< HEAD
 /* line 222, ../sass/styles.scss */
+=======
+/* line 220, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .grid-item img {
   position: relative;
   display: block;
 }
+<<<<<<< HEAD
 /* line 228, ../sass/styles.scss */
+=======
+/* line 226, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .grid-item figcaption {
   position: absolute;
   top: 0;
@@ -222,12 +341,20 @@ button:hover {
   background: #654073;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 237, ../sass/styles.scss */
+=======
+/* line 235, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .grid-item h2 {
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* line 244, ../sass/styles.scss */
+=======
+/* line 242, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .cs-style figcaption {
   height: 100%;
   opacity: 0;
@@ -238,42 +365,74 @@ button:hover {
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
+<<<<<<< HEAD
 /* line 256, ../sass/styles.scss */
+=======
+/* line 254, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .cs-style:hover figcaption {
   opacity: 1;
 }
 
+<<<<<<< HEAD
 /* line 261, ../sass/styles.scss */
+=======
+/* line 259, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .skill-list {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 5px 0;
 }
+<<<<<<< HEAD
 /* line 269, ../sass/styles.scss */
+=======
+/* line 268, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .skill-list img {
   width: 7%;
   margin-right: 1.5vw;
 }
+<<<<<<< HEAD
 /* line 273, ../sass/styles.scss */
+=======
+/* line 272, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .skill-list img:last-child {
   margin-right: 0;
 }
 
+<<<<<<< HEAD
 /* line 279, ../sass/styles.scss */
 .contato {
   color: #303030;
 }
 /* line 282, ../sass/styles.scss */
+=======
+/* line 278, ../sass/styles.scss */
+.contato {
+  color: #303030;
+}
+/* line 281, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato a {
   color: #52559a;
   font-weight: bold;
 }
+<<<<<<< HEAD
 /* line 286, ../sass/styles.scss */
 .contato a:hover {
   text-decoration: underline;
 }
 /* line 291, ../sass/styles.scss */
+=======
+/* line 285, ../sass/styles.scss */
+.contato a:hover {
+  text-decoration: underline;
+}
+/* line 290, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form {
   margin-top: 1.5rem;
   -webkit-box-orient: vertical;
@@ -281,7 +440,11 @@ button:hover {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+<<<<<<< HEAD
 /* line 299, ../sass/styles.scss */
+=======
+/* line 298, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form input,
 .contato .contact-form textarea {
   width: 90%;
@@ -290,7 +453,11 @@ button:hover {
   border: solid 2px #52559a;
   color: #fff;
 }
+<<<<<<< HEAD
 /* line 308, ../sass/styles.scss */
+=======
+/* line 307, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form input {
   padding: 7px;
   border-radius: 5px;
@@ -299,32 +466,56 @@ button:hover {
   -o-transition: background ease-out 0.3s;
   transition: background ease-out 0.3s;
 }
+<<<<<<< HEAD
 /* line 316, ../sass/styles.scss */
+=======
+/* line 315, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form input:focus {
   color: #52559a;
   background: transparent;
 }
+<<<<<<< HEAD
 /* line 320, ../sass/styles.scss */
+=======
+/* line 319, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form input:focus:focus::-webkit-input-placeholder {
   color: #52559a;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 /* line 325, ../sass/styles.scss */
+=======
+/* line 324, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form input:focus:focus:-ms-input-placeholder {
   color: #52559a;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 /* line 330, ../sass/styles.scss */
+=======
+/* line 329, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form input:focus:focus::-ms-input-placeholder {
   color: #52559a;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 /* line 335, ../sass/styles.scss */
+=======
+/* line 334, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form input:focus:focus::placeholder {
   color: #52559a;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 /* line 342, ../sass/styles.scss */
+=======
+/* line 341, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form textarea {
   height: 15vh;
   resize: none;
@@ -335,33 +526,57 @@ button:hover {
   border-radius: 5px;
   outline: none;
 }
+<<<<<<< HEAD
 /* line 352, ../sass/styles.scss */
+=======
+/* line 351, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form textarea:focus {
   color: #52559a;
   background: transparent;
 }
+<<<<<<< HEAD
 /* line 356, ../sass/styles.scss */
+=======
+/* line 355, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form textarea:focus:focus::-webkit-input-placeholder {
   color: #52559a;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 /* line 361, ../sass/styles.scss */
+=======
+/* line 360, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form textarea:focus:focus:-ms-input-placeholder {
   color: #52559a;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 /* line 366, ../sass/styles.scss */
+=======
+/* line 365, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form textarea:focus:focus::-ms-input-placeholder {
   color: #52559a;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 /* line 371, ../sass/styles.scss */
+=======
+/* line 370, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .contato .contact-form textarea:focus:focus::placeholder {
   color: #52559a;
   opacity: 0.8;
 }
 
+<<<<<<< HEAD
 /* line 380, ../sass/styles.scss */
+=======
+/* line 379, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .btnTop {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -371,7 +586,11 @@ button:hover {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
+<<<<<<< HEAD
 /* line 390, ../sass/styles.scss */
+=======
+/* line 389, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .btnTop button {
   width: 60px;
   height: 60px;
@@ -382,12 +601,20 @@ button:hover {
   bottom: 2vh;
   right: 0.7vw;
 }
+<<<<<<< HEAD
 /* line 400, ../sass/styles.scss */
+=======
+/* line 399, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .btnTop button:hover {
   color: #52559a;
   background: transparent;
 }
+<<<<<<< HEAD
 /* line 405, ../sass/styles.scss */
+=======
+/* line 404, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 .btnTop button .fa-arrow-up {
   font-size: 1.4rem;
   -webkit-animation-duration: 2.5s;
@@ -438,7 +665,11 @@ button:hover {
     transform: translate3d(0, 4px, 0);
   }
 }
+<<<<<<< HEAD
 /* line 460, ../sass/styles.scss */
+=======
+/* line 459, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 [data-anime] {
   opacity: 0;
   -webkit-transition: ease-in-out 0.5s;
@@ -446,7 +677,11 @@ button:hover {
   transition: ease-in-out 0.5s;
 }
 
+<<<<<<< HEAD
 /* line 467, ../sass/styles.scss */
+=======
+/* line 466, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 [data-anime="fadeIn"] {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -454,7 +689,11 @@ button:hover {
   animation-timing-function: ease;
 }
 
+<<<<<<< HEAD
 /* line 474, ../sass/styles.scss */
+=======
+/* line 473, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 [data-anime="left"] {
   -webkit-transform: translate3d(-60px, 0, 0);
   transform: translate3d(-60px, 0, 0);
@@ -463,7 +702,11 @@ button:hover {
   transition-delay: 0.4s;
 }
 
+<<<<<<< HEAD
 /* line 482, ../sass/styles.scss */
+=======
+/* line 481, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 [data-anime="left-2"] {
   -webkit-transform: translate3d(-60px, 0, 0);
   transform: translate3d(-60px, 0, 0);
@@ -472,7 +715,11 @@ button:hover {
   transition-delay: 1s;
 }
 
+<<<<<<< HEAD
 /* line 491, ../sass/styles.scss */
+=======
+/* line 490, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 [data-anime="box"] {
   -webkit-transform: translate3d(-60px, 0, 0);
   transform: translate3d(-60px, 0, 0);
@@ -481,7 +728,11 @@ button:hover {
   transition-delay: 1.25s;*/
 }
 
+<<<<<<< HEAD
 /* line 500, ../sass/styles.scss */
+=======
+/* line 499, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
 [data-anime].animate {
   opacity: 1;
   -webkit-transform: translate3d(0px, 0px, 0px);
@@ -490,7 +741,11 @@ button:hover {
 
 /* Tablets e smarts */
 @media only screen and (max-width: 900px) {
+<<<<<<< HEAD
   /* line 508, ../sass/styles.scss */
+=======
+  /* line 507, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -498,7 +753,11 @@ button:hover {
     flex-direction: column;
   }
 
+<<<<<<< HEAD
   /* line 515, ../sass/styles.scss */
+=======
+  /* line 514, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
   .sidebar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -516,12 +775,20 @@ button:hover {
     text-align: center;
     min-height: 50vh;
   }
+<<<<<<< HEAD
   /* line 532, ../sass/styles.scss */
+=======
+  /* line 531, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
   .sidebar .sidebar-icons {
     margin-top: 15px;
   }
 
+<<<<<<< HEAD
   /* line 543, ../sass/styles.scss */
+=======
+  /* line 542, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
   .content .grid .grid-item figcaption {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -540,28 +807,44 @@ button:hover {
 }
 /* Desktop */
 @media only screen and (min-width: 901px) {
+<<<<<<< HEAD
   /* line 569, ../sass/styles.scss */
+=======
+  /* line 568, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
   .sidebar {
     position: fixed;
     height: 100vh;
     width: 30vw;
   }
 
+<<<<<<< HEAD
   /* line 575, ../sass/styles.scss */
+=======
+  /* line 574, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
   .sidebar-container {
     -webkit-box-flex: 30vw;
     -ms-flex: 30vw;
     flex: 30vw;
   }
 
+<<<<<<< HEAD
   /* line 581, ../sass/styles.scss */
+=======
+  /* line 580, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
   .content {
     -webkit-box-flex: 65vw;
     -ms-flex: 65vw;
     flex: 65vw;
   }
 
+<<<<<<< HEAD
   /* line 587, ../sass/styles.scss */
+=======
+  /* line 586, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
   .grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -570,7 +853,11 @@ button:hover {
     flex-wrap: wrap;
   }
 
+<<<<<<< HEAD
   /* line 595, ../sass/styles.scss */
+=======
+  /* line 594, ../sass/styles.scss */
+>>>>>>> origin/gh-pages
   .grid-item {
     width: 45%;
     margin-right: 1rem;
