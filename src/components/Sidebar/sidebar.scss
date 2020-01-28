@@ -1,0 +1,110 @@
+
+@import '../../styles/variables.scss';
+
+.sidebar {
+    text-align: center;
+    background: linear-gradient(-45deg, $purple, $sea-blue); // ou troca a posição das cores.
+    background-size: 100% 100%;
+    animation: gradient 15s ease infinite;
+
+    @media (min-width: 961px){
+        height: 100vh;
+        position: fixed;
+    }
+
+    @media (min-width: 421px){
+        padding: 100px 80px;
+    }
+
+    @media (min-width: 421px) and (max-width: 1024px){
+        padding: 100px 60px;
+    }
+
+    @media (max-width: 420px){
+        padding: 100px 20px;
+    }
+
+    // @media (min-width: 1601px){
+    //     flex-basis: 100%;
+    // }
+
+    // @media (min-width: 1500px){
+    //     width: 25vw;
+    // }
+
+    // @media (min-width: 901px){
+    //     height: 100vh;
+    //     position: fixed;
+    // }
+
+    // @media (max-width: 900px){
+    //     min-height: 50vh;
+    //     text-align: center;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+
+    //     .sidebar-icons {
+    //         margin-top: 15px;
+    //     }
+    // }
+
+    &-nav {
+        font-size: 1.25rem;
+        margin-top: 10px;
+        list-style-type: none;
+
+        li {
+            padding: 0 8px;
+
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &-image {
+        width: 180px;
+        margin: 0 auto 15px;
+        display: flex;
+
+        img {
+            width: 100%;
+            border: solid 5px $black;
+            border-radius: 50%;
+        }
+    }
+
+    &-icons {
+        @media (min-width: 961px){
+            margin-top: 60%;
+        }
+
+        @media (max-width: 960px){
+            margin-top: 30px;
+        }
+
+        li {
+            padding: 8px;
+        }
+
+        .fa-google,
+        .fa-github,
+        .fa-codepen {
+            font-size: 1.8rem;
+            background: $black;
+            border: solid 2px $black;
+            border-radius: 50%;
+            padding: 12px;
+            margin-right: 2px;
+            vertical-align: middle;
+            transition: ease 0.3s;
+
+            &:hover {
+                color: $black;
+                background: transparent;
+            }
+        }
+    }
+}

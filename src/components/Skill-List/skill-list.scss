@@ -1,0 +1,44 @@
+.skills-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width: 481px) and (max-width: 768px){
+        max-width: 90%;
+    }
+
+    li {
+        @media (min-width: 960px){
+            max-width: 80px;
+        }
+
+        @media (max-width: 959px){
+            max-width: 60px;
+        }
+
+        @media (max-width: 768px){
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 420px){
+            margin-bottom: 20px;
+        }
+
+        &:not(:last-child){
+            @media (min-width: 376px){
+                margin-right: 20px;
+            }
+
+            @media (max-width: 375px){
+                margin-right: 10px;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}

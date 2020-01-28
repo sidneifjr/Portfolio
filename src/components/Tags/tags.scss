@@ -1,0 +1,62 @@
+@import '../../styles/variables.scss';
+
+.tag {
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: inline-block;
+    transition: opacity ease-in 0.2s;
+
+    @media (min-width: 481px){
+        font-size: 1.2rem;
+    }
+
+    @media (min-width: 376px) and (max-width: 480px){
+        font-size: 1rem;
+    }
+
+    @media (max-width: 375px){
+        font-size: 0.7rem;
+    }
+
+    &.SASS {
+        background: #bf4080;
+    }
+
+    &.Javascript {
+        background: #000;
+    }
+
+    &.React {
+        background: darken(#61DAFB, 20%);
+    }
+
+    &.Vue {
+        background: #4fc08d;
+    }
+
+    &.Redux {
+        background: #764ABC;
+    }
+
+    &.Router {
+        background: #D10014;
+    }
+
+    &.Axios {
+        background: #35495E;
+    }
+
+    &.jQuery {
+        background: #1E2E3B;
+    }
+
+    &:nth-child(n+2){
+        margin-left: 10px;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

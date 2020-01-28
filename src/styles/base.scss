@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Zilla+Slab");
+@import './variables.scss';
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #eee;
+    color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Zilla Slab", sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+span {
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+}
+
+button {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    background: $sea-blue;
+    border: solid 2px $sea-blue;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.3s;
+    display: block;
+    
+    &:hover {
+        background: transparent;
+        color: $sea-blue;
+    }
+}
+
+::-webkit-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    color: #ddd;
+}
+
+:-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    color: #ddd;
+}
+
+::-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    color: #ddd;
+}
+
+.App {
+    display: flex;
+
+    @media (max-width: 960px){
+        flex-direction: column;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

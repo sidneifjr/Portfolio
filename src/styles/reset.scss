@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+mark,
+a,
+button,
+div,
+body,
+header,
+main,
+section,
+footer,
+aside,
+article,
+ul,
+ol,
+li,
+img,
+form,
+input,
+label,
+select,
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+mark {
+    background: none;
+}
+
+input,
+button,
+textarea {
+    outline: none;
+}
+
+input {
+    border: none;
+    transition: border ease-in-out 0.2s;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

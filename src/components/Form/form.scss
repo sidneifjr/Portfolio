@@ -1,0 +1,106 @@
+
+@import '../../styles/variables.scss';
+
+.contact {
+    color: $black;
+
+    a {
+        font-weight: bold;
+        color: $sea-blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-form {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+            background: $sea-blue;
+            border: solid 2px $sea-blue;
+            color: $white;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input {
+            font-size: 1rem;
+            border-radius: 5px;
+            padding: 10px;
+            outline: none;
+            transition: background ease-out 0.3s;
+
+            &::placeholder {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            &:focus {
+                color: $sea-blue;
+                background: transparent;
+
+                &:focus::-webkit-input-placeholder {
+                    color: $sea-blue;
+                    opacity: 0.8;
+                }
+
+                &:focus:-ms-input-placeholder {
+                    color: $sea-blue;
+                    opacity: 0.8;
+                }
+
+                &:focus::-ms-input-placeholder {
+                    color: $sea-blue;
+                    opacity: 0.8;
+                }
+
+                &:focus::placeholder {
+                    color: $sea-blue;
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        textarea {
+            height: 15vh;
+            font-size: 1rem;
+            border-radius: 5px;
+            padding: 10px;
+            resize: none;
+            outline: none;
+            transition: background ease-out 0.3s;
+
+            &::placeholder {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            &:focus {
+                color: $sea-blue;
+                background: transparent;
+
+                &:focus::-webkit-input-placeholder {
+                    color: $sea-blue;
+                    opacity: 0.8;
+                }
+
+                &:focus:-ms-input-placeholder {
+                    color: $sea-blue;
+                    opacity: 0.8;
+                }
+
+                &:focus::-ms-input-placeholder {
+                    color: $sea-blue;
+                    opacity: 0.8;
+                }
+
+                &:focus::placeholder {
+                    color: $sea-blue;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

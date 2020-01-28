@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.btnTop {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    // opacity: 0;
+    // transition: opacity 1s;
+
+    button {
+        border-radius: 50%;
+
+        &:hover {
+            color: $sea-blue;
+            background: transparent;
+        }
+
+        .fa-arrow-up {
+            font-size: 1.4rem;
+        }
+    }
+}

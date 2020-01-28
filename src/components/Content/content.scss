@@ -1,0 +1,63 @@
+
+@import '../../styles/variables.scss';
+
+.content {
+    padding-bottom: 90px;
+
+    @media (min-width: 1601px){
+        padding-right: 190px;
+        padding-left: 500px;
+    }
+
+    @media (min-width: 1401px) and (max-width: 1600px) {
+        padding-right: 120px;
+        padding-left: 480px;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1400px){
+        padding-right: 60px;
+        padding-left: 480px;
+    }
+
+    @media (min-width: 961px) and (max-width: 1024px){
+        padding-right: 60px;
+        padding-left: 435px;
+    }
+
+    @media (min-width: 961px){
+        padding-top: 90px;
+    }
+
+    @media (min-width: 376px) and (max-width: 960px){
+        padding-top: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    @media (max-width: 375px) {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .intro,
+    .intro h1 {
+        margin-bottom: 0.5rem;
+        color: $black;
+    }
+
+    h1 {
+        flex-basis: 100%;
+        color: $black;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .intro h1 {
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
