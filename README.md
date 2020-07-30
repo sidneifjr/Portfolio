@@ -1,6 +1,12 @@
 ## To Do
 
-- Rever media-queries.
+- Media queries.
+
+## Stuff
+
+npm start - Starts project.
+npm run deploy - Builds and push to production.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
