@@ -7,7 +7,7 @@ class Form extends Component {
             <div className="contact" id="contact" data-anime="left">
                 <h1>Contato</h1>
                 <p>Atualmente, atuo como Estagiário de Front-End na <a href="https://www.sirius.com.br/" target="_blank" rel="noopener noreferrer">Sirius Interativa.</a></p>
-                <p>Deseja ver meu currículo? <a href="Currículo Front-End.pdf" target="_blank">Aproveite!</a> Você pode falar comigo pelo formulário abaixo... </p>
+                <p>Deseja ver meu currículo? <a href="curriculo-front-end.pdf" target="_blank">Aproveite!</a> Você pode falar comigo pelo formulário abaixo... </p>
 
                 <form className="contact-form" method="POST" action="https://simple-form.com/sidneijr.77@gmail.com">
                     <input type="text" name="name" placeholder="Como se chama?" required />

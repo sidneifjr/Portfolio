@@ -7,7 +7,13 @@
         max-width: 90%;
     }
 
+    @media (max-width: 375px){
+        justify-content: space-between;
+    }
+
     li {
+        margin-bottom: 20px;
+
         @media (min-width: 960px){
             max-width: 80px;
         }

@@ -30,16 +30,32 @@ class SkillList extends Component {
                 alt: "React",
             },
             {
+                src: "img/skills/typescript.png",
+                alt: "Typescript",
+            },
+            {
+                src: "img/skills/gulp.jpg",
+                alt: "Gulp",
+            },
+            {
+                src: "img/skills/parcel.jpg",
+                alt: "Parcel",
+            },
+            {
                 src: "img/skills/github.svg",
                 alt: "Github",
             },
             {
                 src: "img/skills/illustrator.svg",
-                alt: "Iillustrator",
+                alt: "Illustrator",
             },
             {
                 src: "img/skills/jquery.svg",
                 alt: "jQuery",
+            },
+            {
+                src: "img/skills/docker.png",
+                alt: "Docker",
             },
         ];
 

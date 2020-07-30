@@ -19,7 +19,7 @@ class Content extends Component {
 
                 <Form />
 
-                <GoTopBtn />
+                {/* <GoTopBtn /> */}
             </section>
         )
     }
