@@ -2,7 +2,7 @@
 
 - Media queries.
 
-## Essencial Stuff
+## Essential Stuff
 
 npm start - Starts project.
 npm run deploy - Builds and push to production.
