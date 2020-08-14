@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './skill-list.scss';
 
 class SkillList extends Component {
