@@ -8,48 +8,36 @@
     display: inline-block;
     transition: opacity ease-in 0.2s;
 
-    @media (min-width: 481px){
-        font-size: 1.2rem;
-    }
-
-    @media (min-width: 376px) and (max-width: 480px){
-        font-size: 1rem;
-    }
-
-    @media (max-width: 375px){
-        font-size: 0.7rem;
-    }
-
     &.SASS {
-        background: #bf4080;
+        background: $salmon;
     }
 
     &.Javascript {
-        background: #000;
+        background: $pureblack;
     }
 
     &.React {
-        background: darken(#61DAFB, 20%);
+        background: darken($cyan, 20%);
     }
 
     &.Vue {
-        background: #4fc08d;
+        background: $green;
     }
 
     &.Redux {
-        background: #764ABC;
+        background: $violet;
     }
 
     &.Router {
-        background: #D10014;
+        background: $red;
     }
 
     &.Axios {
-        background: #35495E;
+        background: $darkblue1;
     }
 
     &.jQuery {
-        background: #1E2E3B;
+        background: $darkblue2;
     }
 
     &:nth-child(n+2){
@@ -58,5 +46,23 @@
 
     &:hover {
         opacity: 0.9;
+    }
+}
+
+@media (min-width: 481px){
+    .tag {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 480px){
+    .tag {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px){
+    .tag {
+        font-size: 0.7rem;
     }
 }

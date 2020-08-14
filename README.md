@@ -1,6 +1,9 @@
 ## To Do
 
-- Media queries.
+- Ajustes em Media queries: Feito.
+
+CSS Pós-Build Antes: 8,92KB
+CSS Pós-Build Depois: 8,71KB
 
 ## Essential Stuff
 
