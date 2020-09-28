@@ -12,7 +12,7 @@ class Sidebar extends Component {
                 <h1>Sidnei Farias</h1>
                 <span>Front-End Developer</span>
         
-                <nav className="sidebar-nav">
+                <ul className="sidebar-nav">
                     <li>
                         <a data-scroll href="#portfolio">Portfólio</a>
                     </li>
@@ -24,7 +24,7 @@ class Sidebar extends Component {
                     <li>
                         <a data-scroll href="#contato">Contato</a>
                     </li>
-                </nav>
+                </ul>
         
                 <ul className="sidebar-icons">
                     <li>

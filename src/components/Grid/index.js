@@ -8,7 +8,7 @@ class Grid extends Component {
         const gridItems = [
             {
                 image: 'img/contact-github-api.png',
-                link: '#',
+                link: 'https://github.com/sidneifjr/Contact-Github-API',
                 title: 'Contact Github API',
                 description: 'Aplicação que retorna dados do usuário pesquisado, provenientes da Github API.',
                 languages: ['SASS', 'React', 'Redux', 'Router', 'Axios', 'Javascript'],
@@ -16,9 +16,9 @@ class Grid extends Component {
             },
             {
                 image: 'img/portfolio.png',
-                link: '#',
+                link: 'https://sidneifjr.github.io/Portfolio/',
                 title: 'Portfolio v2',
-                description: 'Segunda interação.',
+                description: 'Segunda iteração.',
                 languages: ['SASS', 'React', 'Javascript'],
                 id: 2
             },
