@@ -26,6 +26,11 @@
             display: block;
         }
 
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+
         input {
             font-size: 1rem;
             border-radius: 5px;

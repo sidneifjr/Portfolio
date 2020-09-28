@@ -1,9 +1,15 @@
 ## To Do
 
-- Ajustes em Media queries: Feito.
+### Ajustes em Media queries.
+CSS pós-build antes/depois: 8,92KB/8,71KB
+- Feito.
 
-CSS Pós-Build Antes: 8,92KB
-CSS Pós-Build Depois: 8,71KB
+### Adicionar labels a cada elemento de input.
+Englobando o input dentro do label; Importante para acessibilidade, em leitores de tela.
+- Feito.
+
+### Rever tamanho das imagens.
+Analisar se uma versão específica para telas mobile seria apropriado.
 
 ## Essential Stuff
 

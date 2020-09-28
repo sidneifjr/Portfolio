@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '../Grid';
 import SkillList from '../Skill-List';
-import GoTopBtn from '../GoTopBtn';
+// import GoTopBtn from '../GoTopBtn';
 import Form from '../Form';
 import Intro from '../Intro';
 
