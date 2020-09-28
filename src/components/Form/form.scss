@@ -14,8 +14,11 @@
 
     &-form {
         margin-top: 1.5rem;
-        display: flex;
-        flex-direction: column;
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+        }
 
         input,
         textarea {

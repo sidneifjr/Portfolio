@@ -11,6 +11,8 @@ Englobando o input dentro do label; Importante para acessibilidade, em leitores 
 ### Rever tamanho das imagens.
 Analisar se uma versão específica para telas mobile seria apropriado.
 
+### Realizar ajustes de perfomance em resoluções mobile.
+
 ## Essential Stuff
 
 npm start - Starts project.

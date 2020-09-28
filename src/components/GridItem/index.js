@@ -6,7 +6,6 @@ import './gridItem.scss';
 class GridItem extends Component {
     render(){
         const languagesTag = this.props.languages;
-        console.log(languagesTag);
 
         return (
             <div className="cs-style grid-item" data-anime="box" key={this.props.id}>
@@ -28,7 +27,6 @@ class GridItem extends Component {
                                 })
                             }
                         </div>
-
                     </figcaption>
                 </a>
             </div>
